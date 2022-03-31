@@ -1,9 +1,16 @@
-﻿namespace dotnet_mycompany
+﻿using dotnet_mycompany.Service;
+namespace dotnet_mycompany
 {
 	public class Startup
 	{
+		public IConfiguration Configuration { get; }
+		public Startup(IConfiguration configuration)=> Configuration = configuration;
+
 		public void ConfigureServices(IServiceCollection services)
 		{
+			// подключаем конфиг из appsettings.json
+			Configuration.Bind("Project", new Config());
+
 			// добавляем поддержку контроллеров и представлений (MVC)
 			services.AddControllersWithViews()
 				// выставляем совместимость с asp.net core 3.0

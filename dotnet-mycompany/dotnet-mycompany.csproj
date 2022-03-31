@@ -21,7 +21,6 @@
     <Folder Include="Areas\Admin\Views\" />
     <Folder Include="Domain\" />
     <Folder Include="Models\ViewComponents\" />
-    <Folder Include="Service\" />
   </ItemGroup>
 
   <ItemGroup>
