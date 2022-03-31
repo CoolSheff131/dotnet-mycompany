@@ -43,7 +43,7 @@ namespace dotnet_mycompany.Domain
 
 			modelBuilder.Entity<TextField>().HasData(new TextField
 			{
-				Id = new Guid("qsdfojlkn"),
+				Id = new Guid("g"),
 				CodeWord = "PageIndex",
 				Title = "Главная"
 			});
