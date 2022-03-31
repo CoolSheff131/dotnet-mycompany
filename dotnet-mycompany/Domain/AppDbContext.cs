@@ -59,7 +59,9 @@ namespace dotnet_mycompany.Domain
 			{
 				Id = new Guid("10058beb-6d89-47a0-98fb-d264dfb6fdff"),
 				CodeWord = "PageContacts",
-				Title = "Контакты"
+				Title = "Контакты",
+				
+				
 			});
 		}
 	}
