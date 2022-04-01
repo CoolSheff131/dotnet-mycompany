@@ -50,7 +50,7 @@ namespace dotnet_mycompany
 			//настраиваем политику авторизации для Admin area
 			services.AddAuthorization(x =>
 			{
-				x.AddPolicy("AdminArea", policy => { policy.RequireRole("admin")});
+				x.AddPolicy("AdminArea", policy => { policy.RequireRole("admin"); });
 			});
 
 
